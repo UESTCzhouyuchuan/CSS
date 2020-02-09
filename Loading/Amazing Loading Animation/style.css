@@ -6,7 +6,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  font-family: "montserrat", sans-serif;
+	font-family: "montserrat", sans-serif;
 }
 .loading {
 	position: relative;

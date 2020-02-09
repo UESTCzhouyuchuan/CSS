@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+section {
+	height: 100vh;
+	background: #000;
+}
+section::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #f00, #f00, #0f0, #0ff, #ff0, #0ff);
+	mix-blend-mode: color;
+	pointer-events: none;
+}
+section h1 {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-size: 5rem;
+	font-family: sans-serif;
+	letter-spacing: 0.2rem;
+}
+section h1 span {
+	display: inline-block;
+	animation: anim 1s linear backwards;
+	-webkit-animation: animation 1s linear backwards;
+}
+@keyframes animation {
+	0% {
+		opacity: 0;
+		filter: blur(10px);
+		transform: rotateY(90deg);
+		-webkit-transform: rotateY(90deg);
+		-moz-transform: rotateY(90deg);
+		-ms-transform: rotateY(90deg);
+		-o-transform: rotateY(90deg);
+		-webkit-filter: blur(10px);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0);
+		transform: rotateY(0);
+		-webkit-transform: rotateY(0);
+		-moz-transform: rotateY(0);
+		-ms-transform: rotateY(0);
+		-o-transform: rotateY(0);
+		-webkit-filter: blur(0);
+	}
+}
+section video {
+	object-fit: cover;
+}
+section h1 span:nth-child(1) {
+	animation-delay: 1s;
+}
+section h1 span:nth-child(2) {
+	animation-delay: 2s;
+}
+section h1 span:nth-child(3) {
+	animation-delay: 2.5s;
+}
+section h1 span:nth-child(4) {
+	animation-delay: 3s;
+}
+section h1 span:nth-child(5) {
+	animation-delay: 3.5s;
+}
+section h1 span:nth-child(6) {
+	animation-delay: 3.75s;
+}
+section h1 span:nth-child(7) {
+	animation-delay: 4s;
+}
+section h1 span:nth-child(8) {
+	animation-delay: 4.5s;
+}
