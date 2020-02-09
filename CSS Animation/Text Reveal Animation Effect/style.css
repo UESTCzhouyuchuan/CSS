@@ -22,13 +22,13 @@ section h1 {
 	padding: 0;
 	position: absolute;
 	top: 50%;
+	width: 100%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	color: #fff;
-	width: 100%;
 	text-align: center;
 	font-size: 5rem;
 	font-family: sans-serif;
@@ -64,27 +64,27 @@ section h1 span {
 section video {
 	object-fit: cover;
 }
-section h1 span:nth-child(1) {
+section h1 span:nth-of-type(1) {
 	animation-delay: 1s;
 }
-section h1 span:nth-child(2) {
+section h1 span:nth-of-type(2) {
 	animation-delay: 2s;
 }
-section h1 span:nth-child(3) {
+section h1 span:nth-of-type(3) {
 	animation-delay: 2.5s;
 }
-section h1 span:nth-child(4) {
+section h1 span:nth-of-type(4) {
 	animation-delay: 3s;
 }
-section h1 span:nth-child(5) {
+section h1 span:nth-of-type(5) {
 	animation-delay: 3.5s;
 }
-section h1 span:nth-child(6) {
+section h1 span:nth-of-type(6) {
 	animation-delay: 3.75s;
 }
-section h1 span:nth-child(7) {
+section h1 span:nth-of-type(7) {
 	animation-delay: 4s;
 }
-section h1 span:nth-child(8) {
+section h1 span:nth-of-type(8) {
 	animation-delay: 4.5s;
 }

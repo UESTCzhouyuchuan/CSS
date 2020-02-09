@@ -1,0 +1,8 @@
+.container {
+	width: 400px;
+	height: 500px;
+	margin: 20px auto;
+	background: url("girl.jpg"), url("sky.jpg");
+	background-size: cover;
+	background-blend-mode: lighten;
+}
