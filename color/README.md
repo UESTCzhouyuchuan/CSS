@@ -1,36 +1,33 @@
 ## 前言
 这篇讲的是CSS3的颜色属性值的表示方法。
-### 颜色关键字。
-常见的`red` `white` `gray`
-### 特殊关键字
-#### currentColor
+
+Blog观看体验更佳。
+Blog地址：<https://blog.yulovexin.xyz/cssyi-ci-xing-liao-jiecss-yan-se-de-suo-you-biao-shi-fang-fa.html>
+
+推荐一个有关颜色设计的网站:
+
+<https://flatuicolors.com/>
+## 颜色关键字。
+常见的有：`red` `white` `gray`
+## 特殊关键字
+### currentColor
 
 currentColor代表当前元素设置的`color`值,或者最近的祖先元素设置的`color`值。
 例如:
 ```
 <div style="color:green; border: 1px dashed currentColor;">
   The color of this text is green.
-  <div style="background:blue; height:60px;color:currentColor">
-    top
-    <div style="background:currentColor;height:20px;"></div>
-    1231
-  </div>
-  This block is surrounded by a green border.
-</div>
-```
-<div style="color:green; border: 1px dashed currentColor;">
-  The color of this text is green.
-  <div style="background:blue; height:60px;color:currentColor">
+  <div style="background:blue; height:70px;color:currentColor">
     top
     <div style="background:currentColor;height:20px;"></div>
     bottom
   </div>
-  This block is surrounded by a green border
+  This block is surrounded by a green border。
 </div>
-
-#### rebeccapurple
+```
+### rebeccapurple
 颜色 rebeccapurple 等价于颜色 #639。
-### RGB
+## RGB
 - R为red
 - G为green
 - B为black
@@ -38,7 +35,7 @@ currentColor代表当前元素设置的`color`值,或者最近的祖先元素设
 color: rgb(255,255,255);
 ```
 光的三原色红绿蓝。
-### 十六进制颜色
+## 十六进制颜色
 
 比如
 
@@ -46,19 +43,19 @@ color: rgb(255,255,255);
 - `#000000`简写为`#000`。
 
 
-**缩写的格式**: `#663399` === `#639`
+**缩写的格式**: `#663399` === `#639`，即6个16进制简写成3个，实际值是每个值的双拼写的组合。
 
 前两个值为`R`值，中间两个值为`G`值，后两个值`为`B值。
-### RGBA
+## RGBA
 A是alpha即透明度，值在0-1，0为完全透明，1不透明。
 ```
 color: rgba(0,0,0,0.5);
 ```
-### HLS
+## HLS
 ```
 background-color: hsl(30,100%，50%);
 ```
-#### H
+### H
 H为hue，即色相，色相即颜色值。
 取值范围是0-`360`
 - 0和360是红色
@@ -67,15 +64,15 @@ H为hue，即色相，色相即颜色值。
 - 240表示蓝色
 
 ![hue.png](./hue.png)
-#### S
+### S
 S为saturation,饱和度。表示色彩鲜艳程度,0%-100%,饱和度越高，颜色越鲜艳。
 
 ![saturation.png](./saturation.png)
-#### L
+### L
 L为lightness,亮度。表示色彩明暗程度,0%-100%,值越高，颜色越亮。
 
 ![lightness.png](./lightness.png)
-### HSLA
+## HSLA
 和RGBA类似，A是alpha即透明度，值在0-1，0为完全透明，1不透明。
 ```
 background-color: hsl(30,100%,50%,.5);
