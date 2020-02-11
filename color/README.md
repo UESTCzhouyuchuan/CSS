@@ -25,7 +25,7 @@ currentColor代表当前元素设置的`color`值,或者最近的祖先元素设
     <div style="background:currentColor;height:20px;"></div>
     bottom
   </div>
-  This block is surrounded by a green border.
+  This block is surrounded by a green border
 </div>
 
 #### rebeccapurple
