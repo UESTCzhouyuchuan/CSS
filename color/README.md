@@ -75,7 +75,7 @@ L为lightness,亮度。表示色彩明暗程度,0%-100%,值越高，颜色越亮
 ## HSLA
 和RGBA类似，A是alpha即透明度，值在0-1，0为完全透明，1不透明。
 ```
-background-color: hsl(30,100%,50%,.5);
+background-color: hsla(30,100%,50%,.5);
 ```
 ## 附表颜色关键字查询
 
