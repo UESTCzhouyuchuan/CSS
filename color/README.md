@@ -2,6 +2,34 @@
 这篇讲的是CSS3的颜色属性值的表示方法。
 ### 颜色关键字。
 常见的`red` `white` `gray`
+### 特殊关键字
+#### currentColor
+
+currentColor代表当前元素设置的`color`值,或者最近的祖先元素设置的`color`值。
+例如:
+```
+<div style="color:green; border: 1px dashed currentColor;">
+  The color of this text is green.
+  <div style="background:blue; height:60px;color:currentColor">
+    top
+    <div style="background:currentColor;height:20px;"></div>
+    1231
+  </div>
+  This block is surrounded by a green border.
+</div>
+```
+<div style="color:green; border: 1px dashed currentColor;">
+  The color of this text is green.
+  <div style="background:blue; height:60px;color:currentColor">
+    top
+    <div style="background:currentColor;height:20px;"></div>
+    bottom
+  </div>
+  This block is surrounded by a green border.
+</div>
+
+#### rebeccapurple
+颜色 rebeccapurple 等价于颜色 #639。
 ### RGB
 - R为red
 - G为green
@@ -16,6 +44,9 @@ color: rgb(255,255,255);
 
 - `#FFFFFF`可简写为`#FFF`。
 - `#000000`简写为`#000`。
+
+
+**缩写的格式**: `#663399` === `#639`
 
 前两个值为`R`值，中间两个值为`G`值，后两个值`为`B值。
 ### RGBA
