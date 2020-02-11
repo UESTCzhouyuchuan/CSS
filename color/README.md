@@ -944,3 +944,5 @@ background-color: hsl(30,100%,50%,.5);
   </tr>
  </tbody>
 </table>
+<p><a name="1">[*]</a> 从 IE 8.0 开始仅支持 'e'-grey 色 (带 e) (<code>gr<strong>e</strong>y</code>, <code>darkgr<strong>e</strong>y</code>, <code>darkslategr<strong>e</strong>y</code>, <code>dimgr<strong>e</strong>y</code>, <code>lightgr<strong>e</strong>y</code>, <code>lightslategr<strong>e</strong>y</code>) 。 IE 3 到 IE 6 仅支持 'a' 的变体: <code>gr<strong>a</strong>y</code>, <code>darkgr<strong>a</strong>y</code>, <code>darkslategr<strong>a</strong>y</code>, <code>dimgr<strong>a</strong>y</code>, <code>lightgr<strong>a</strong>y</code>, <code>lightslategr<strong>a</strong>y</code>。</p>
+<p><a name="2">[**]</a>&nbsp; IE 7-8 只对 <a href="/zh-CN/docs/Web/CSS/background" title="background 是一种 CSS 简写属性，用于一次性集中定义各种背景属性，包括 color, image, origin 与 size, repeat 方式等等。"><code>background</code></a> 和 <a href="/zh-CN/docs/Web/CSS/border" title="CSS的border属性是一个用于设置各种单独的边界属性的简写属性。border可以用于设置一个或多个以下属性的值： border-width, border-style, border-color。"><code>border</code></a> 支持 <code>transparent</code> 关键字。在 IE 下<code> color:transparent</code> 被绘制成黑色。IE6 渲染透明边框也是黑色。</p>
