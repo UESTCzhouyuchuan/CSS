@@ -14,10 +14,7 @@ body {
 	height: 200px;
 	box-sizing: border-box;
 	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
 	border-top: 10px solid #e74c3c;
 	animation: circle 2s linear infinite;
 	-webkit-animation: loading1 2s linear infinite;
