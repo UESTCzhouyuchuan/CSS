@@ -1,0 +1,40 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #000;
+}
+
+.shadow{
+  position: relative;
+  margin: 200px auto 0;
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(0deg, #000, #262626);
+}
+.shadow:after,
+.shadow:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#fb0094, #00f, #0f0, #ff0, #f00,#fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400% 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: anim 20s linear infinite;
+}
+.shadow:after{
+  filter: blur(5px);
+}
+@keyframes anim{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 300% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
